@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@graphql-modules/core": "0.7.0",
-    "@types/express": "4.16.1",
+    "@types/express": "4.17.6",
     "@types/express-graphql": "0.6.2",
     "express": "4.16.4",
     "express-graphql": "0.7.1",
