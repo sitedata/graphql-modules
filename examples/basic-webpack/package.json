@@ -9,7 +9,9 @@
     "build": "webpack",
     "preanalyze": "npx webpack --profile --json > dist/stats.json",
     "analyze": "npx webpack-bundle-analyzer dist/stats.json",
-    "test": "yarn build && bundlesize"
+    "test": "yarn build && bundlesize",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bundlesize": [
     {
@@ -25,7 +27,8 @@
     "express-graphql": "0.7.1",
     "graphql": "14.2.1",
     "reflect-metadata": "0.1.13",
-    "typescript": "3.4.3"
+    "typescript": "3.4.3",
+    "snyk": "^1.363.0"
   },
   "devDependencies": {
     "bundlesize": "0.18.0",
@@ -33,5 +36,6 @@
     "webpack": "4.35.0",
     "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.3.5"
-  }
+  },
+  "snyk": true
 }
