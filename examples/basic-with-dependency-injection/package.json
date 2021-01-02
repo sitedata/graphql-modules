@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node ./src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@graphql-modules/core": "0.7.0",
@@ -17,7 +19,8 @@
     "graphql": "14.2.1",
     "reflect-metadata": "0.1.13",
     "ts-node": "8.0.2",
-    "typescript": "3.4.3"
+    "typescript": "3.4.3",
+    "snyk": "^1.437.3"
   },
   "jest": {
     "transform": {
@@ -37,5 +40,6 @@
     "@types/jest": "23.3.2",
     "jest": "23.5.0",
     "ts-jest": "23.1.4"
-  }
+  },
+  "snyk": true
 }
