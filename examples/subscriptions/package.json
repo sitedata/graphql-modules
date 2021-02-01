@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@graphql-modules/core": "0.8.0-alpha.66fb3726",
@@ -21,6 +23,8 @@
     "reflect-metadata": "0.1.13",
     "subscriptions-transport-ws": "0.9.16",
     "ts-node": "8.0.2",
-    "typescript": "3.4.3"
-  }
+    "typescript": "3.4.3",
+    "snyk": "^1.440.1"
+  },
+  "snyk": true
 }
