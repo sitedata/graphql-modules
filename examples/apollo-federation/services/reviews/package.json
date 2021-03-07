@@ -1,12 +1,16 @@
 {
   "name": "reviews",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@apollo/federation": "latest",
     "apollo-server": "latest",
     "@graphql-modules/core": "latest",
-    "graphql": "latest"
-  }
+    "graphql": "latest",
+    "snyk": "^1.474.0"
+  },
+  "snyk": true
 }
